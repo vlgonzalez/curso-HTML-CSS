@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tudo sobre google glass</title>
+    <link rel="stylesheet" type="text/css" href="_css/estilo.css">
+    <link rel="stylesheet" href="_css/form.css">
+</head>
+<script src="_javascript/funcoes.js"></script>
+<script>
+    function calculo(){
+        let qtd= Number(document.getElementById('cQtd').value)
+        var tot= qtd*1500
+        document.getElementById('cTot').value=tot
+    }
+</script>
+<body>
+    <div id="interface">
+        <header id="cabecalho">          
+<hgroup>
+    <h1> Google Glass</h1>
+<h2> A revolução do Google está chegando</h2> 
+</hgroup>
+<img id="icone" src='_imagens/glass-oculos-preto-peq.png'>
+
+<nav id="menu">
+<h1> Menu Principal</h1>
+<ul>
+<li onmouseover="mudarfoto('_imagens/home.png')" onmouseout="mudarfoto('_imagens/contato.png')"> <a href="index.html"> Home</a></li>
+<li onmouseover="mudarfoto('_imagens/especificacoes.png')" onmouseout="mudarfoto('_imagens/contato.png')"> <a href="specs.html"> Especificações</a></li>
+<li onmouseover="mudarfoto('_imagens/fotos.png')" onmouseout="mudarfoto('_imagens/contato.png')"><a href="fotos.html"> Fotos</a></li>
+<li onmouseover="mudarfoto('_imagens/multimidia.png')" onmouseout="mudarfoto('_imagens/contato.png')"><a href="multimidia.html"> Multimídia</a></li>
+ <li onmouseover="mudarfoto('_imagens/contato.png')" onmouseout="mudarfoto('_imagens/contato.png')"><a href="fale-conosco.html"> Fale conosco</a></li>
+</ul>
+
+</nav>
+
+</header>
+<header id="noticia">
+    <hgroup>
+<h3>Fale Conosco > Contato</h3>
+<h1>Formulário de Contato</h1>
+<h2>por Gustavo Guanabara</h2>
+<h3 class="direita"> Atualizado em 23/Abril/2013</h3>
+</hgroup>
+</header>
+<form action="mailto:vinicius.vlg@hotmail.com" method="post" id="contato" oninput="calculo ()">
+<fieldset id="usuario">
+    <legend> Identificação do Usuário</legend>
+    <p>Nome: <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome completo"></p>
+    <p>Senha: <input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="Maximo 8 caracteres">  </p>
+    <p>E-mail <input type="email" name="temail" id="cemail" size="40" maxlength="40"></p>
+    <fieldset> <legend>Sexo:</legend>
+    <input type="radio" name="sex" id="cmas"><label for="cmas">Masculino</label> 
+    <input type="radio" name="sex" id="cfem"><label for="cfem">Feminino</label> 
+    </fieldset>
+   <legend> Data de Nascimento: <input type="date" name="tdata" id="cdata"></legend>
+</fieldset>
+<fieldset id="endereco">
+<legend> Endereço do Usuário</legend>
+   <p>Logradouro: <input type="text" name="tendereco" id="cendereco"></p> 
+    <p>Número: <input type="number" name="cnumero" id="cnumero"> </p>    
+    <p>Estado: <select name="test" id="cest">
+        <optgroup label="sudeste">
+        <option value="Rj">RJ</option>
+        <option value="SP">SP</option>
+    </optgroup>
+    <optgroup label="sul">
+        <option value="Rio grande do sul">RS</option>
+        <option value="Santa catariana">SC</option>
+    </optgroup>
+    </select></p> 
+    <p>Cidade: <input type="text" name="tcid" id="ccid" list="cidades"></p>
+    <datalist id="cidades">
+        <option value="Rj"></option>
+        <option value="Nova Igaçu"></option>
+        <option value="Niteroi"></option>
+    </datalist> 
+</fieldset>
+<fieldset id="mensssagem">
+<legend> Mensagem do Usuário</legend>
+    <p>Grau de Urgência: Min<input type="range" name="turg" id="curg" min="0" max="10">Max </p> 
+    <p> Mensagem: <textarea name="tmsg" id="cmsg" cols="45" rows="10" placeholder="Deixe sua msg"></textarea> </p>
+</fieldset>
+<fieldset id="pedido">
+<legend> Quero um Google Glass</legend>
+    <p> <input type="checkbox" name="tPed" id="cPed" checked> Gostaria de adquirir um Google Glass quando disponível</p> 
+    <p>Cor: <input type="color" name="cCor" id="cCor"></p>   
+    <p>Quantidade: <input type="number" name="tQtd" id="cQtd" min="0" max="5" value="0"> </p> 
+    <p>Total a apagar: <input type="number" name="tTot" id="cTot" placeholder="Total a pagar" readonly> </p>
+</fieldset>
+
+<input type="button" value="enviar">
+</form>
+
+<footer id="rodape">
+    <p>Copyright 2013 - by Gustavo Guanabara <br>
+    <a href="https://www.facebook.com/" target="_blank"> Facebook</a> | Twitter</p>
+    </footer>
+    </div>
+        
+    </body>
+    </html>

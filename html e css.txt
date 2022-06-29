@@ -1,0 +1,29 @@
+configuração comportamental deve ser feita no head (CSS
+<wbr> - para quebrar texto sem ifem
+&shy - para qubra com ifem
+<b> </b> - para negrito em html
+x<sup>2</sup> - coloca x elevado a dois
+h<sub>2</sub>0 - coloca o dois embaixo, ficando H2O
+<code> </code> -  O HTML não considera simbolos como maior e menor, por isso o code, permite mostrar eles na tela, sem precisar mudar a escrita com o &
+<pre> </pre> o Htmla não acieta espaços e enter, porem quando esta dentro do pre, ele copia o codigo da forma que foi escrita com os espaços 
+para colocar imagem no fundo  background-image: url('galeria-02.jpg');
+padra de cores rgb - pega os valores das cores no paint e digit os valores de red grenn e blue
+hsl mesmo conceita do rgb, pega a matiz ( luminosidade brilho) e tras a cor
+se eu colocar o a no final do rgba ou hsla , siginifica alfa, que tras a transparencia da letra, permetindo ver o fundo por ela
+<figure></figure> - serve para delimitar que o arquivo é uma img
+<figcaption></figcaption> - serve para colocar legendas
+<link rel="stylesheet" type="text/css" href="_css/estilo.css">- cria um link para abrir um css que esta em outra pasta
+/* */ serve para colocar comentarios
+position: relative; /* o comando vai ficar no mesmo campo que o codigo html estiver */
+<nav> </nav> cria uma area de navegação
+
+ol e ul criam listas o primeiro ordenada, pode ser por numeros, letras ou algoritimos romanos , o segundo é por simbolos
+Os itens que forem entrar na lista precisam ter <li>
+<a href="https://www.google.com/glass/start/"> Project Glass</a> esse comando transforma Project glasse em um hiperlikn porem abre em outra janela
+<a href="https://www.google.com/glass/start/" target="_blank"> Project Glass</a> O target="_blank" serve para abrir na mesma janela porem outra aba
+display: block; /* bloco pode fluturar /*
+position: absolute; /* permite que o menu flute dentro do site, se usar a retativa, ele só pode fluturar dentro do menu */
+<table> cria uma tabela
+<tr>cria uma linha
+<td> cria uma celula
+<td rowspan="2"class="ce"> - permite que o conteudo de uma linha se estenda para outras nesse exemplo para duas

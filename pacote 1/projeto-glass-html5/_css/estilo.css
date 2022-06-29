@@ -1,0 +1,204 @@
+ @font-face { /* taz uma fonte externa */
+    font-family: 'fonte-logo';
+    src: url('../_fonts/bubblegum-sans-regular.otf');
+ }
+ p{
+            text-align: justify;
+            text-indent: 50px;
+        }
+a{
+    color: #606060;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+        body{
+            background-color:white;
+            color: rgba(0, 0, 0, 1);
+            font-family: Arial,sans-serif;
+        }
+div#interface{
+    width: 900px; /* largura */
+    background-color:white;
+    margin: -20px auto 10px auto; /* encima, direita embaixo, esquerda */
+    box-shadow: 0px 0px 10px rgba(0,0,0, 0.5); /* sombra no objeto */
+    padding: 10px 10px 10px 10px; /* espaço interno do objeto */
+}
+header#cabecalho img#icone{ /*oculos */
+    position: absolute;
+    left: 1050px;
+    top: 70px;
+}
+header#cabecalho{
+    border-bottom: 1px solid;
+    height: 150px;
+    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px;
+}
+header#cabecalho h1{
+    font-family: 'fonte-logo', sans-serif;
+    font-size: 30px;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0,0,0, 0.6);
+    padding: 0px;
+    margin-bottom: 0px; /* margem de baixo */
+}
+header#cabecalho h2 {
+    font-family: Arial,sans-serif;
+    font-size: 15Spx;
+    color: #888888;
+    padding: 0px;
+    margin-top: 0px; /* margem de cima */
+}
+figure.foto-legenda{ /* foto legenda foi a classe criada dentro do html */
+    position: relative; /* o comando vai ficar no mesmo campo que o codigo html estiver */
+    border: 8px solid white;
+    box-shadow: 1px 1px 4px black;
+}
+figure.foto-legenda img{ /* ajusta o tamano da img */
+    width: 100%;
+    height: 100%;
+}
+figure.foto-legenda figcaption { /* formatação da legenda */
+    opacity: 0;
+    position: absolute; /* vai ficar na posição 0 dentro do figure */
+    top: 0px;
+    background-color: rgba(0,0,0, 0.4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+figure.foto-legenda:hover figcaption{ /*quando passar com o meuse por cima da foto fica opaca */
+    opacity: 1;
+    
+}
+nav#menu {
+    display: block; /* bloco pode fluturar */
+}
+nav#menu ul{ /* ele chama a lista pelu ul */
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute; /* permite que o menu flute dentro do site, se usar a retativa, ele só pode fluturar dentro do menu */
+    top: -20px;
+    left: 500px;
+}
+nav#menu li{ /* chama cada item da lista */
+    display: inline-block;
+    background-color:  #dddddd;
+    padding: 10px; /* espaço na area cinza do botão*/
+    margin: 2px; /* espaço entre os botões*/
+    transition: background-colo 1s;
+}
+
+nav#menu li:hover{ /* quando passa o mouse muda a cor*/
+    background-color: #606060;
+}
+nav#menu h1{ /* esconde o meu principal*/
+    display: none;
+}
+nav#menu a{ /* quando tiver um link muda a cors */
+    color: black;
+    text-decoration: none; /* tira a formatação antiga*/
+}
+nav#menu a:hover{ /* quando passar o mouse mudar a cor da letra */
+    color: #dddddd;
+}
+section#corpo {
+    display: block;
+    width: 500px;
+    float: left;
+    border-right: 1px solid #606060;
+    padding-right: 20px;
+}
+article#noticia h2{
+    font-size: 12pt;
+    color: #606060;
+    background-color: #dddddd;
+    padding: 5px 0px 5px 0px;
+    margin: 10px 0px 10px 0px;
+}
+header#noticia h1 {
+    font-family: 'fonte-logo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.direita{
+    text-align: right;
+}
+header#noticia h2{
+font-size: 13pt;
+color: #cecece;
+background-color: #ffffff;
+margin-bottom: 0px;
+}
+header#noticia h3{
+font-size: 12px;
+color: #606060;
+}
+table#tabelaespc{
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-left: auto;
+    nav-right: auto;
+    align-self: auto;
+}
+table#tabelaespc td {
+    border: 1px solid;
+    padding: 10px;
+    vertical-align: auto;
+}
+table#tabelaespc td.ce{
+    color: #ffffff;
+    background-color: #606060;
+    vertical-align: top;
+    font-weight: bold;
+}
+table#tabelaespc td.cd{
+    background-color: #cecece;
+}
+table#tabelaespc caption{
+    color: #888888;
+    font-size: 15pt;
+    font-weight: bold;
+
+}
+table#tabelaespc caption span{
+    display: block;
+    float: right;
+    color: #000000;
+    font-size: 8pt;
+    margin-top: 10px;
+}
+aside#lateral {
+    display: block; /* para um elemento flutuar na tela, ele precisa estar em blocos */
+    width: 350px;
+    float: right;
+    background-color: #dddddd;
+    padding: 10px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,rgba(0,0,0, 0.5));
+}
+aside#lateral h1{
+    font-family: 'fonte-logo', 'sans-serif';
+    font-size: 20pt;
+    color: #606060;
+}
+aside#lateral h2{
+    background-color: #606060;
+    font-size: 13pt;
+    color: #ffffff;
+    padding: 5px;
+}
+footer#rodape{
+
+    clear: both;
+    border-top: 1px solid #606060;
+    text-align: center;
+}
+footer#rodape p{
+    text-align: center;
+}
